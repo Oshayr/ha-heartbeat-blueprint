@@ -9,19 +9,18 @@ smart-home during a configurable look-back window (1 h – 24 h), then posts the
 result as a persistent notification—or hands it to your favourite LLM
 (OpenAI, Anthropic, local Llama 2…) for a human-friendly digest.
 
-▣ Conveys a periodic pulse of “what’s up right now”.
-  Generates a professional summary of smart-home *activity* during the
-  last **X hours** (default 24 h; 720 h ≈ monthly, 2160 h ≈ quarterly).
-▣ Token-aware compression keeps prompts inside LLM limits.
-▣ Works with any Conversation agent (OpenAI, Anthropic, local Llama…).
-▣ Sends the result as a persistent notification.
+Conveys a periodic pulse of “what’s up right now”.
+Generates a professional summary of smart-home *activity* during the last **X hours** (default 24 h;).
+Token-aware compression keeps prompts inside LLM limits.
+Works with any Conversation agent (OpenAI, Anthropic, local Llama…).
+Sends the result as a persistent notification.
 
 | Blueprint UID | Version | HA min ver. | License |
 |---------------|---------|-------------|---------|
 | `oshayr/heartbeat` | 1.0.0 | 2024.6.0 | MIT |
 
 ## Features
-* **Time-window reports** – 30 min → Monthly
+* **Time-window reports** – 30 min → Daily
 * **Token-aware** prompt shortening
 * **Area / domain / state filters**
 * **Raw or summary output modes**
@@ -30,11 +29,9 @@ result as a persistent notification—or hands it to your favourite LLM
 
 1. Copy the raw URL: https://raw.githubusercontent.com/Oshayr/ha-heartbeat-blueprint/refs/heads/main/automation/heartbeat.yaml
 
-2. In Home Assistant → *Settings › Automations & Scenes › Blueprints ›
-Import Blueprint* → paste the URL.
+2. In Home Assistant → *Settings › Automations & Scenes › Blueprints › Import Blueprint* → paste the URL.
 
-3. Create a new automation from the imported blueprint, adjust the
-look-back window & advanced filters, and you’re done.
+3. Create a new automation from the imported blueprint, adjust the settings, and you’re done.
 
 ## Inputs explained
 | Title | Description | Default |
