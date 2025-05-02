@@ -25,7 +25,9 @@ blueprint:
     #### Advanced Filters
       Domains to ignore - List of Domains to be ignored.
       States to ignore - List of States to be ignored.
-      Areas to ignore - List of Entities to be ignored.
+      Areas to ignore - List of Areas to be ignored.
+      Entities to ignore - List of Entities to be ignored.
+      
   input:
     Main Settings:
       name: Main Settings
@@ -109,7 +111,7 @@ blueprint:
           name: Conversation ID
           description: The Conversation ID for the LLM chat and the notificatins
           selector: { text: {} }
-          default: "Daily Report"
+          default: "HeartBeat"
         skip_if_empty:
           name: 'Skip notification'
           description: >
