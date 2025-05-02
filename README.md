@@ -49,7 +49,7 @@ look-back window & advanced filters, and you’re done.
 |---------------|----------------------|---------|
 | extra_prompt | Extra LLM instructions | empty |
 | Output mode | summary → run the LLM and show its summary, raw → skip the LLM call and show the activity list verbatim | summary |
-| Message ID | The message Id for the LLM chat and the notificatins | Daily Report |
+| Message ID | The message Id for the LLM chat and the notificatins | HeartBeat |
 | Skip notification | Skip notification when nothing changed | false |
 
 #### Filters
