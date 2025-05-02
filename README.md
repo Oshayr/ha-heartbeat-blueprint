@@ -37,10 +37,12 @@ Import Blueprint* → paste the URL.
 look-back window & advanced filters, and you’re done.
 
 ## Inputs explained
-| Run every | How often the report should run (30min, 1 hour, 3 hours, 6 hours, 12 hours, 24 hours (default)) |
-| Look-back period (h) | How many hours of activity to summarise (1 – 24). |
-| Conversation agent | Pick the Conversation / LLM agent that should receive the prompt. |
-| Max prompt length (chars) | Absolute ceiling for the size of the text sent to the LLM. 1 token ≈ 4 chars, so 4 096 chars ≈ 1 024 tokens. |
+| Title | Description | Default |
+|---------------|----------------------|---------|
+| Run every | How often the report should run (30min, 1 hour, 3 hours, 6 hours, 12 hours, 24 hours) | 24 hours |
+| Look-back period (h) | How many hours of activity to summarise (1 – 24). | 24 |
+| Conversation agent | Pick the Conversation / LLM agent that should receive the prompt. | chatgpt |
+| Max prompt length (chars) | Absolute ceiling for the size of the text sent to the LLM. 1 token ≈ 4 chars, so 4 096 chars ≈ 1 024 tokens. | 40096 |
 
 #### Advanced settings
   extra_prompt - Extra LLM instructions (optional)
