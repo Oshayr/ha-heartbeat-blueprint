@@ -2,9 +2,10 @@ blueprint:
   name: "Home Assistant HeartBeat"
   domain: automation
   author: Oshayr
-  source_url: https://gist.github.com/<your-gist-id>.yaml   # raw YAML
+  source_url: https://raw.githubusercontent.com/Oshayr/ha-heartbeat-blueprint/refs/heads/main/automation/heartbeat.yaml
   description: |
-    # Home Assistant HeartBeat    
+    # Home Assistant HeartBeat
+    [![View on GitHub](https://img.shields.io/badge/GitHub-View%20Repository-blue?logo=github)](https://github.com/Oshayr/ha-heartbeat-blueprint)
     ▣ Conveys a periodic pulse of “what’s up right now”.
       Generates a professional summary of smart-home *activity* during the
       last **X hours** (default 24 h; 720 h ≈ monthly, 2160 h ≈ quarterly).
