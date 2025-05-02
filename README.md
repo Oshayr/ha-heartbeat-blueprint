@@ -9,21 +9,19 @@ smart-home during a configurable look-back window (1 h – 24 h), then posts the
 result as a persistent notification—or hands it to your favourite LLM
 (OpenAI, Anthropic, local Llama 2…) for a human-friendly digest.
 
-Conveys a periodic pulse of “what’s up right now”.
-Generates a professional summary of smart-home *activity* during the last **X hours** (default 24 h;).
-Token-aware compression keeps prompts inside LLM limits.
-Works with any Conversation agent.
-Sends the result as a persistent notification.
-
 | Blueprint UID | Version | HA min ver. | License |
 |---------------|---------|-------------|---------|
 | `oshayr/heartbeat` | 1.0.0 | 2024.6.0 | MIT |
 
 ## Features
+* Conveys a periodic pulse of “what’s up right now”
 * **Time-window reports** – 30 min → Daily
 * **Token-aware** prompt shortening
 * **Area / domain / state filters**
 * **Raw or summary output modes**
+* **Works with any Conversation agent**
+* Generates a professional summary of smart-home *activity* during the last **X hours** (default 24 h;).
+* Sends the result as a persistent notification.
 
 ## Installation
 
@@ -39,9 +37,9 @@ Sends the result as a persistent notification.
 | Run every | How often the report should run (30min, 1 hour, 3 hours, 6 hours, 12 hours, 24 hours) | 24 hours |
 | Look-back period (h) | How many hours of activity to summarise (1 – 24) | 24 |
 | Conversation agent | Pick the Conversation / LLM agent that should receive the prompt | chatgpt |
-| Max prompt length (chars) | Absolute ceiling for the size of the text sent to the LLM. 1 token ≈ 4 chars, so 4 096 chars ≈ 1 024 tokens | 40096 |
+| Max prompt length (chars) | Absolute ceiling for the size of the text sent to the LLM. 1 token ≈ 4 chars, so 4 096 chars ≈ 1 024 tokens | 4096 |
 
-#### Advanced settings
+### Advanced settings
 | Title | Description | Default |
 |---------------|----------------------|---------|
 | extra_prompt | Extra LLM instructions | empty |
@@ -49,7 +47,7 @@ Sends the result as a persistent notification.
 | Message ID | The message Id for the LLM chat and the notificatins | HeartBeat |
 | Skip notification | Skip notification when nothing changed | false |
 
-#### Filters
+### Filters
 | Title | Description | Default |
 |---------------|----------------------|---------|
 | Domains to ignore | List of Domains to be ignored | 'sensor', 'automation', 'script', 'camera' |
@@ -59,6 +57,18 @@ Sends the result as a persistent notification.
   
 ## Changelog
 * **1.0.0** – initial public release
+
+## Contributing
+
+Contributions are welcome! Please follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch (\`git checkout -b feature/your-feature-name\`).
+3. Make your changes and commit them (\`git commit -am 'Add new feature'\`).
+4. Push to the branch (\`git push origin feature/your-feature-name\`).
+5. Create a new Pull Request.
+
+For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
 MIT © 2025 Oshayr
