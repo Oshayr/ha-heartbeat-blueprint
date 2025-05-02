@@ -40,19 +40,25 @@ look-back window & advanced filters, and you’re done.
 | Title | Description | Default |
 |---------------|----------------------|---------|
 | Run every | How often the report should run (30min, 1 hour, 3 hours, 6 hours, 12 hours, 24 hours) | 24 hours |
-| Look-back period (h) | How many hours of activity to summarise (1 – 24). | 24 |
-| Conversation agent | Pick the Conversation / LLM agent that should receive the prompt. | chatgpt |
-| Max prompt length (chars) | Absolute ceiling for the size of the text sent to the LLM. 1 token ≈ 4 chars, so 4 096 chars ≈ 1 024 tokens. | 40096 |
+| Look-back period (h) | How many hours of activity to summarise (1 – 24) | 24 |
+| Conversation agent | Pick the Conversation / LLM agent that should receive the prompt | chatgpt |
+| Max prompt length (chars) | Absolute ceiling for the size of the text sent to the LLM. 1 token ≈ 4 chars, so 4 096 chars ≈ 1 024 tokens | 40096 |
 
 #### Advanced settings
-  extra_prompt - Extra LLM instructions (optional)
-  Output mode - summary → run the LLM and show its summary, raw → skip the LLM call and show the activity list verbatim
-  Message ID - The message Id for the LLM chat and the notificatins
-  Skip notification - Skip notification when nothing changed
-#### Advanced Filters
-  Domains to ignore - List of Domains to be ignored.
-  States to ignore - List of States to be ignored.
-  Areas to ignore - List of Entities to be ignored.
+| Title | Description | Default |
+|---------------|----------------------|---------|
+| extra_prompt | Extra LLM instructions | empty |
+| Output mode | summary → run the LLM and show its summary, raw → skip the LLM call and show the activity list verbatim | summary |
+| Message ID | The message Id for the LLM chat and the notificatins | Daily Report |
+| Skip notification | Skip notification when nothing changed | false |
+
+#### Filters
+| Title | Description | Default |
+|---------------|----------------------|---------|
+| Domains to ignore | List of Domains to be ignored | 'sensor', 'automation', 'script', 'camera' |
+| States to ignore | List of States to be ignored | 'unavailable', 'unknown', '' |
+| Areas to ignore | List of Areas to be ignored | Empty |
+| Entities to ignore | List of Entities to be ignored | Empty |
   
 ## Changelog
 * **1.0.0** – initial public release
