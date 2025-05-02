@@ -12,7 +12,7 @@ result as a persistent notification—or hands it to your favourite LLM
 Conveys a periodic pulse of “what’s up right now”.
 Generates a professional summary of smart-home *activity* during the last **X hours** (default 24 h;).
 Token-aware compression keeps prompts inside LLM limits.
-Works with any Conversation agent (OpenAI, Anthropic, local Llama…).
+Works with any Conversation agent.
 Sends the result as a persistent notification.
 
 | Blueprint UID | Version | HA min ver. | License |
