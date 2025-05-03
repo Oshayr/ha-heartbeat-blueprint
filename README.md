@@ -58,6 +58,10 @@ result as a persistent notification—or hands it to your favourite LLM
 ## Changelog
 * **1.0.0** – initial public release
 
+## ToDo
+* Notification choice
+* Home Assistant system data + prompt
+
 ## Contributing
 
 Contributions are welcome! Please follow these steps to contribute:
